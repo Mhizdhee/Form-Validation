@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    
+    <h1>Whogohost</h1>
+    <form id="myForm">
+        <div class="card">
+            <span id="error"></span><br> <br> <br>
+
+        <!-- Email -->
+       <p class="label"><label for="email">Email Address</label></p>
+        <input class="emailInput" type="email" name="email" id="email" placeholder="Enter email" >
+
+        <br> <br>
+        <!-- password -->
+       <p class="label"> <label for="password">Password</label></p>
+        <a href="#">Forgot?</a>
+        <input class="pwInput" type="password" name="password" id="password" placeholder="Password" >
+        <!-- <span id="error"></span> -->
+
+        <br><br>
+   <!-- remember me -->
+   <input class="chkbx" type="checkbox" name="checkbox" id="checkbox" >  <label class="remb" for="Rememberme">Remember Me </label> 
+ 
+   
+   
+    <!-- sign in -->
+    <button id="btn" type="submit">Login</button>
+        
+        <!-- <a href="success.html">Login</a></button> -->
+    <hr>
+    <button type="submit">Sign in with Facebook </button>
+    <hr>
+    <p class="para">Not a member yet? <a href="register.html">Create a New Account</a></p>
+        </div>
+     </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

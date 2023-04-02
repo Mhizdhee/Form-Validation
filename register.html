@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>Whogohost</h1>
+    <form id="form">
+
+        <div class="card">
+        <span id="errors">
+            <!-- <ul id="lists">
+                
+            </ul> -->
+        </span><br> <br> <br>
+<!-- sect -->
+        <p>Use social account (optional)</p>
+        <span><hr>or fill the form below</span>
+        <button id="submit" type="submit">Sign in with Facebook </button>
+        <p>Personal Information</p>
+         <!-- firstname -->
+        <p class="label"> <label for="fname">Firstname*</label></p>
+         <input type="text" name="fname" id="fname" placeholder="Firstname" ><br><br>
+    <!-- lastname -->
+ 
+
+     <p class="label"><label for="lname">LastName*</label></p>
+     <input type="text" name="lname" id="lname" placeholder="Lastname">
+<br><br>
+ <!-- email -->
+ <p class="label"><label for="email">Email Address*</label></p>
+ <input type="email" name="email" id="email" placeholder="sample@example.com"><br><br>
+<!-- phonenumber -->
+     <p class="label"><label for="phone">Phone Number*</label></p>
+     <input type="phonenumber" name="phone" id="phone" placeholder="+234 815 673 3454"><br><br>
+<!-- Billing -->
+     <p>Billing Address</p>
+     <p class="label"><label for="Address">Company Name (Optional)</label></p>
+     <input type="text" name="address" id="address"><br><br>
+<!-- street address -->
+<p class="label"><label for="S.Address">Street Address* </label></p>
+<input type="text" name="address" id="S.address"><br><br>
+ <!-- street address 2 -->
+     <p class="label"><label for="s2Address">Street Address 2 (Optional)</label></p>
+     <input type="text" name="address" id="s2address"><br><br>
+<!-- city  -->
+<p class="label"><label for="city">City* </label></p>
+<input type="text" name="address" id="city"><br><br>
+<!-- state -->
+<p class="label"><label for="state">State</label></p>
+<input type="text" name="state" id="state" placeholder="State"><br><br>
+ <!-- state/province -->
+ <p class="label"><label for="postcode">Postcode*</label></p>
+ <input type="text" name="postcode" id="postcode" placeholder="postcode"><br><br> 
+ <!-- country -->
+ <p class="label"><label for="country">Country*</label></p>
+ <select name="country" id="country">
+    <option value="Afghanistan">Afghanistan</option>
+    <option value="Algeria">Algeria</option>
+    <option value="Angola">Angola</option>
+    <option value="Bahamas">Bahamas</option>
+    <option value="Belgium">Belgium</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Canada">Canada</option>
+    <option value="Cameroon">Cameroon</option>
+    <option value="China">China</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Nigeria">Nigeria</option>
+
+ </select><br><br>
+    
+    <!--addnal info  -->
+    <p>Additional Information</p>
+    <small>(required fields are marked with *)</small>
+    <!-- about -->
+    <p class="label"><label for="info">Where did you hear about us? (Optional)</label></p>
+    <select name="info" id="info">
+        <option value="none">None</option>
+        <option value="ask">Ask.com</option>
+        <option value="bing">Bing</option>
+        <option value="cybercafe">Cyber cafe</option>
+        <option value="frnd">Friend</option>
+        <option value="fb">Facebook</option>
+        <option value="f/g">Forums/Groups</option>
+        <option value="google">Google</option>
+        <option value="insta">Instagram</option>
+        <option value="linkedln">Linkedln</option>
+        <option value="twitter">Twitter</option>
+        <option value="whrs">Web Hosting Review Sites</option>
+        <option value="webinar">Webinars</option>
+        <option value="WA">Whogohost Affiliate</option>
+        <option value="Wt">Whogohost Training</option>
+        <option value="OSM">Other Social Media</option>
+        <option value="others">Others</option>
+    </select>
+<!-- category -->
+ <p class="label"><label for="category">Customer category *</label></p>
+<select name="category" id="category">
+    <option value="enterprise">Enterprise</option>
+    <option value="entrepreneur">Entrepreneur</option>
+    <option value="individual">Individual</option>
+    <option value="ngo">NGO</option>
+    <option value="sme">SME</option>
+    <option value="webdesigner">Web Designer</option>
+    <option value="webdeveloper">Web Developer</option>
+</select>
+<small>Choose the category that best describes you to enable us serve you better
+</small>
+<!-- consent chk -->
+<input type="checkbox" name="chkbx" id="chkbx">
+<p class="label"><label for="consent">Consent to share personal data *</label></p>
+<small>I consent to the processing of my personal data within or outside my jurisdiction</small>
+<!-- security que -->
+<p class="label"><label for="security que">Security Question*</label></p>
+<select name="security que" id="security que">
+    <option value="enterprise">What were the last four digits of your childhood telephone number?</option>
+    <option value="entrepreneur">What primary school did you attend? </option>
+    <option value="individual">What is your spouse or partner's mother's maiden name?</option>
+    <option value="ngo">What is the name of your first pet?</option>
+    <option value="sme">In what town or city was your first full time job?</option>
+    <option value="webdesigner">In what town or city did you meet your spouse or partner?</option>
+    <option value="webdeveloper">What is the middle name of your oldest child?</option>
+</select>
+<small>Choose your security question to enable us verify you when you contact us</small>
+<!-- Security Question Answer -->
+<p class="label"><label for="security que ans">Security Question Answer*</label></p>
+<input type="text" name="sec ans" id="sec-ans">
+<small>Enter the answer to the security question you chose. We would ask for this to verify your identity when you contact us</small>
+<!-- Choose Currency -->
+<p class="label"><label for="currency">Choose Currency*</label></p>
+<select name="currency" id="currency">
+    <option value="ngn">NGN</option>
+    <option value="usd">USD</option>
+    <option value="kes">KES</option>
+    <option value="ghs">GHS</option>
+</select>
+     
+    <!-- account security -->
+    <p class="account-sec"><label for="acct-sec">Account Security
+    </label></p>
+    <p class="label"><label for="password">Password*</label> <small>at least 5 characters
+    </small></p>
+    <input type="password" name="password" id="password" placeholder="atleast 5 characters"><br><br>
+    <!-- confirm password -->
+    <p class="label"><label for="confirmpassword">Confirm Password*</label></p>
+     <input type="password" name="confirmpswrd" id="confirmpswd" placeholder="atleast 5 characters"><br><br>
+     <button class="pwgen">Generate Password</button>
+     <!-- mailing list -->
+     <p>Join our mailing list </p>
+     <p>We would like to send you occasional news, information and special offers by email. To join our mailing list, simply tick the box below. 
+    You can unsubscribe at any time.</p>
+    <div>
+    <p>Receive Emails:</p>
+    <button class="switch">ON</button>
+    </div>
+    <input type="checkbox" name="chkbx" id="chkbx2">
+    <a>I have read and agree to the <a>Terms of Service</a></p>
+     <!-- register button -->
+     <button type="submit" class="reg">Register Now</button>
+
+     <p>Already registered with us? <a>Sign In</a> or <a>Reset Password</a></p>
+          <span id="success"></span> 
+        </div>
+ </form>
+ <script src="./register.js"></script>
+</body>
+</html>
